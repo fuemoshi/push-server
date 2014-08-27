@@ -173,47 +173,41 @@ WebClient.prototype.disconnect = function(){
 	try{
 		var usAlias = map[socket.appId]['uidSocketMap']
 		//remove user => socket
-		if(socket.uid && usAlias[socket.uid]){
-			var pos = usAlias[socket.uid].indexOf(socket);
-			if(pos != -1){
-				usAlias[socket.uid].splice(pos, 1);
-			}
-			//只有聊天应用才需要销毁组与用户之间的关系
-			if(APP_CONFIG[socket.appId].type == 'chat'){
+		if(!socket.uid || !usAlias[socket.uid]){
+			return;
+		}
+		
+		var pos = usAlias[socket.uid].indexOf(socket);
+		if(pos != -1){
+			usAlias[socket.uid].splice(pos, 1);
+		}
+		//只有聊天应用才需要销毁组与用户之间的关系
+		if(APP_CONFIG[socket.appId].type == 'chat'){
+			var guAlias = map[socket.appId]['groupUidMap'];
 
-				var guAlias = map[socket.appId]['groupUidMap'];
-
-				if(socket.group && guAlias[socket.group]){
-					var isGroupExist = false;
-					for(var i = 0; i < usAlias[socket.uid].length; ++i){
-						var uSocket = usAlias[socket.uid][i];
-						if(uSocket.group == socket.group){
-							isGroupExist = true;
-						}
+			if(socket.group && guAlias[socket.group]){
+				var isGroupExist = false;
+				for(var i = 0; i < usAlias[socket.uid].length; ++i){
+					var uSocket = usAlias[socket.uid][i];
+					if(uSocket.group == socket.group){
+						isGroupExist = true;
 					}
-					if(isGroupExist === false){
-						var guPos = guAlias[socket.group].indexOf(socket.uid);
-						if(guPos != -1){
-							guAlias[socket.group].splice(guPos, 1);
-						}
-						if(guAlias[socket.group].length == 0){
-							delete guAlias[socket.group];
-						}
+				}
+				if(isGroupExist === false){
+					var guPos = guAlias[socket.group].indexOf(socket.uid);
+					if(guPos != -1){
+						guAlias[socket.group].splice(guPos, 1);
+					}
+					if(guAlias[socket.group].length == 0){
+						delete guAlias[socket.group];
 					}
 				}
 			}
-
-			if(usAlias[socket.uid].length == 0){
-				delete usAlias[socket.uid];
-			}
-
 		}
-		
 
-		//APP_LIB.COMMON.debug('-----');
-		//APP_LIB.COMMON.debug('leave');
-		//APP_LIB.COMMON.debug(map);
-		//APP_LIB.COMMON.debug('-----');
+		if(usAlias[socket.uid].length == 0){
+			delete usAlias[socket.uid];
+		}
 
 	}catch(err){
 		WebClient.error(err, socket);

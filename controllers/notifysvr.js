@@ -46,34 +46,34 @@ module.exports = (function(){
 
 			//将group信息挂载到data.msg上
 			data.msg.group = groupArr[i];
-			if(guAlias[groupArr[i]]){
+			if(!guAlias[groupArr[i]]){
+				continue;
+			}
+			//
+			for(var j = 0; j < guAlias[groupArr[i]].length; ++j){
+				var uid = guAlias[groupArr[i]][j];
+				//如果有传uidArr参数，则只通知这部份用户
+				if(uidArr != undefined && uidArr.indexOf(uid) == -1){
+					continue;
+				}
+				if(!usAlias[uid]){
+					continue;
+				}
 				//
-				for(var j = 0; j < guAlias[groupArr[i]].length; ++j){
-
-					var uid = guAlias[groupArr[i]][j];
-
-					//如果有传uidArr参数，则只通知这部份用户
-					if(uidArr != undefined && uidArr.indexOf(uid) == -1){
-						continue;
+				for(var k = 0; k < usAlias[uid].length; ++k){
+					var socket = usAlias[uid][k];
+					//分两种类型
+					if(APP_CONFIG[appId].type == 'chat'){
+						if(groupArr[i] == socket.group){
+							socket.emit(data.eventName , data.msg);
+						}
+					}else{ //subcribe
+						socket.emit(data.eventName , data.msg);
 					}
-					if(usAlias[uid]){
-						//
-						for(var k = 0; k < usAlias[uid].length; ++k){
-							var socket = usAlias[uid][k];
-							//分两种类型
-							if(APP_CONFIG[appId].type == 'chat'){
-								if(groupArr[i] == socket.group){
-									socket.emit(data.eventName , data.msg);
-								}
-							}else{ //subcribe
-								socket.emit(data.eventName , data.msg);
-							}
-						}//end for get socket
-					}
-				}//end for get uid
+				}
+			}
+		}
 
-			}//end if
-		}//
 	}
 
 	//通知房间里面对应的用户
@@ -136,15 +136,16 @@ module.exports = (function(){
 		var groupArr = typeof(data.group) == 'string' ? [data.group] : data.group;
 		var guAlias  = map[data.appId]['groupUidMap'];
 		for(var i = 0; i < groupArr.length; ++i){
-			if(guAlias[groupArr[i]]){
-				for(var j = 0; j < uidArr.length; ++j){
-					var guPos = guAlias[groupArr[i]].indexOf(uidArr[j]);
-					if(guPos != -1){
-						guAlias[groupArr[i]].slice(guPos, 1);
-					}
-					if(guAlias[groupArr[i]].length == 0){
-						delete guAlias[groupArr[i]];
-					}
+			if(!guAlias[groupArr[i]]){
+				continue;
+			}
+			for(var j = 0; j < uidArr.length; ++j){
+				var guPos = guAlias[groupArr[i]].indexOf(uidArr[j]);
+				if(guPos != -1){
+					guAlias[groupArr[i]].slice(guPos, 1);
+				}
+				if(guAlias[groupArr[i]].length == 0){
+					delete guAlias[groupArr[i]];
 				}
 			}
 		}
@@ -153,6 +154,7 @@ module.exports = (function(){
 	return {
 		inform : function(data){
 			//暂时不做消息回传给子进程
+			//eval会执行所有传过来的字符串，这里注意先验证
 			if(INFORM_MODE.indexOf(data.mode) == -1){
 				return;
 			}
