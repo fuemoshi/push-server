@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subcribe</title>
+    <link rel="stylesheet" href="../public/js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/js/select2/select2.css">
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/select2/select2.min.js"></script>
+    <script src="../public/js/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            padding-top: 100px;
+        }
+        .box{
+            margin-right: 0;
+            margin-left: 0;
+            background-color: #fff;
+            border-color: #333;
+            border-width: 1px;
+            border-radius: 4px 4px 0 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            position: relative;
+            padding: 25px 15px 15px;
+            border-color: #ccc #ccc #ccc;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="">
+        您好，这里是消息通知后台<br/><br/>
+        <select name="productList" multiple="multiple" id="productList" style="width:200px;">
+            <?php foreach($products as $product){?>
+                <option value="<?php echo $product[0];?>">
+                    <?php echo $product[1];?>
+                </option>
+            <?php }?>
+        </select>
+        &nbsp;&nbsp;
+        <button class="btn btn-default notifyBtn">通知该商品有库存</button>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+       
+       $("#productList").select2({
+            allowClear: true,
+            placeholder: "Select Products"
+        });
+
+       $(".notifyBtn").click(function(){
+            var productList = $('#productList').val();
+            if(productList){
+                $.ajax({
+                    url  : 'manager.php',
+                    type : 'POST',
+                    data : { act : 'notify' ,groups : productList},
+                    dataType : 'JSON',
+                    success : function(res){
+                        if(res.code == 0){
+                            //$('#productList').select2('val','');
+                            alert('通知发货成功!');
+                        }else{
+                            alert(res.msg);
+                        }
+                    }
+                });
+            }else{
+                alert('请选择商品');                
+            }
+       });
+
+    });
+</script>
+</html>

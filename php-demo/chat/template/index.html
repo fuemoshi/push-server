@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="../public/js/bootstrap/css/bootstrap.css">
+    <script src="http://192.168.38.152:4000/socket.io/socket.io.js"></script>
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            padding-top: 100px;
+        }
+        .roomList{
+            padding: 0px;
+            margin: 0px;
+            width: 600px;
+            float:left;
+            list-style: none;
+        }
+        .roomList li{ 
+            margin-right: 10px;
+            float: left;
+        }
+        .red{
+            color: red;
+        }
+        .msgBox{
+            float : left;
+            width : 700px;
+            font-size : 12px;
+        }
+        .onlineUser{
+            float : left;
+            width : 140px;
+            height : 473px;
+        }
+        .msgContent{
+            width : 95%;
+            height : 300px;
+            overflow-y : scroll;
+            word-wrap: break-word;
+        }
+        .sendBox{
+            margin-top : 10px;
+            width : 100%;
+        }
+        .sendTextarea{
+            width : 550px;
+            height : 120px;
+            float : left;
+        }
+        .sendButton{
+            width : 110px;
+            height: 120px;
+            float : right;
+        }
+        .box{
+            margin-right: 0;
+            margin-left: 0;
+            background-color: #fff;
+            border-color: #333;
+            border-width: 1px;
+            border-radius: 4px 4px 0 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            position: relative;
+            padding: 25px 15px 15px;
+            border-color: #ccc #ccc #ccc;
+            border-style: solid;
+        }
+        .uid{
+            color : blue;
+        }
+        .msg{
+            padding-left : 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="min-width:900px;">
+        您好，<?php echo $_COOKIE['uid'];?> 
+        <a href="?act=logout">[登出]</a><br/><br/>
+        <ul class="roomList">
+            <li>
+                <a class="btn btn-default <?php echo $_GET['group']?'':'red';?>" target="_blank" href="index.php">
+                    大厅
+                </a>
+            </li>
+            <li>
+                <a class="btn btn-default <?php echo $_GET['group'] == 'room1'?'red':'';?>" target="_blank" href="?group=room1">
+                    房间1
+                </a>
+            </li>
+            <li>
+                <a class="btn btn-default <?php echo $_GET['group'] == 'room2'?'red':'';?>" target="_blank" href="?group=room2">
+                    房间2
+                </a>
+            </li>
+            <li>
+                <a class="btn btn-default <?php echo $_GET['group'] == 'room3'?'red':'';?>" target="_blank" href="?group=room3">
+                    房间3
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container" style="margin-top:10px;min-width:900px;">
+        <div class="msgBox box">
+            <div class="msgContent"></div>
+            <div class="sendBox">
+                <textarea class="sendTextarea" name="" id=""></textarea>
+                <input class="sendButton btn btn-default" type="button" value="发送(Enter)">
+            </div>
+        </div>
+        <!-- <div class="onlineUser box" style="margin-left:10px;">
+        </div> -->
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        var params = <?php echo json_encode($params);?>;
+        var uid    = '<?php echo $params["uid"];?>';
+        var socket = io.connect('http://192.168.38.152:4000',{ query: $.param(params) });
+        var group = '<?php echo $_GET["group"];?>';
+        
+        socket.on('message', function(m){
+            if(m.uid && m.msg){
+                var privateChatStr = '';
+                var privateToYou = '';
+                var isPrivate = m.mode == 'private_public_uid'  || m.mode == 'private_group_uid';
+                if(m.uid != uid){
+                    privateChatStr = '<a href="###" uid="'
+                        + m.uid +'" class="private_chat">[ 私聊 ]</a>';
+                    if(isPrivate){
+                        privateToYou = ' 对你私聊 ';
+                    }
+                }else if(isPrivate){
+                    privateToYou = ' 你对 ' + m.toUid + ' 私聊';
+                }
+                var htmlStr = '<div class="">'
+                    + '<span class="uid">'+ m.uid + ' '
+                    + privateToYou
+                    + privateChatStr + ' '
+                    + m.dateTime+'</span><br/>'
+                    + '<span class="msg">'+m.msg+'</span></div>';
+                $('.msgContent').append(htmlStr);
+                $('.msgContent').scrollTop($('.msgContent')[0].scrollHeight);
+            }
+        });
+        
+        $('.sendButton').click(function(){
+
+            var content = $.trim($('.sendTextarea').val());
+            var matchArr = content.match(/^\[@(.+)](.*)/);
+            
+            if(matchArr && matchArr instanceof Array){ //私聊
+                content = matchArr[2];
+            }
+
+            if(content && content.length<=200){
+                if(matchArr){
+                    var toUid = matchArr[1];
+                    if(!group){
+                        //大厅私聊
+                        socket.emit('message',{mode: 'private_public_uid' , uid : toUid, msg: content});
+                        //分组私聊
+                    }else{
+                        socket.emit('message',{mode: 'private_group_uid' , uid : toUid, group : group , msg: content});
+                    }
+                }else{
+                    if(!group){
+                        //大厅广播
+                        socket.emit('message',{mode: 'broadcast_public' , msg: content})
+                    }else{
+                        //分组广播
+                        socket.emit('message',{mode: 'broadcast_group' , group : group , msg: content})
+                    }
+                }
+                $('.sendTextarea').val('');
+            }else{
+                alert('消息不可为空或超过200个字符(包括中英)');
+            }
+        });
+        
+        $('.container').on('click','.private_chat', function(){
+            $('.sendTextarea').val('[@'+ $(this).attr('uid') +']');
+        });
+
+        document.onkeydown = function(e){
+            var ev = document.all ? window.event : e;
+            if(ev.keyCode == 13){
+                $('.sendButton').click();
+                return false;
+            }
+        }
+    });
+</script>
+</html>

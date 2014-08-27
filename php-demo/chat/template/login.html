@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat Login</title>
+	<link rel="stylesheet" href="../public/js/bootstrap/css/bootstrap.css">
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		body{
+			padding-top: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container" style="width:500">
+		<form action="login.php" method="post" class="form-inline" id="loginForm"  role="form">
+			<h3>聊天室</h3>
+			<div class="form-group">
+		      <label class="sr-only" for="username">用户名</label>
+		      <input type="text" name="username" class="form-control" id="username" placeholder="请输入用户名">
+		   </div>
+		   <button class="btn btn-default loginBtn">登陆</button>
+		</form>
+		<br/>
+		<span style="color:orangered">[ 注：登陆名将做为用户ID，请输入英文字母及数字 ]</span>
+	</div>
+</body>
+
+<script>
+	$(document).ready(function(){
+		$('.loginBtn').click(function(){
+			var username = $('#username').val().replace(/[^\w\.\/]/ig,'');
+			if(!username){
+				alert('用户名格式错误');
+				return false;
+			}
+			$('#loginForm').submit();
+		});
+	});
+</script>
+</html>

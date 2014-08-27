@@ -1,0 +1,13 @@
+[2014-08-25 23:22:23.902] [ERROR] 10000 - sign error
+[2014-08-25 23:26:30.069] [ERROR] 10000 - [TypeError: Cannot read property 'kkkk' of undefined]
+TypeError: Cannot read property 'kkkk' of undefined
+    at Object.APP_LIB.COMMON.authSign (/apps/dat/web/working/push-server/lib/common.js:13:17)
+    at Socket.WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:46:29)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+    at Decoder.add (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/index.js:233:12)
+    at Client.ondata (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:166:16)
+    at Socket.emit (events.js:95:17)

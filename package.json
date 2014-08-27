@@ -1,0 +1,38 @@
+{
+  "name": "push-server",
+  "version": "0.0.1",
+  "description": "push server",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuemoshi/push-server"
+  },
+  "keywords": [
+    "push",
+    "server"
+  ],
+  "author": "simba-wei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuemoshi/push-server/issues"
+  },
+  "homepage": "https://github.com/fuemoshi/push-server",
+  "dependencies" : {
+      "redis"    : "*",
+      "socket.io": "*",
+      "socket.io-client" : "*",
+      "hiredis"  : "*",
+      "crypto"   : "*",
+      "crc32"    : "*",
+      "log4js"   : "*",
+      "express"  : "*",
+      "body-parser"  : "*",
+      "moment" : "*"
+  }
+}

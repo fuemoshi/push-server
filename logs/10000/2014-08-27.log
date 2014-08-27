@@ -1,0 +1,412 @@
+[2014-08-27 02:50:31.259] [ERROR] 10000 - sign error
+[2014-08-27 03:15:58.765] [ERROR] 10000 - sign error
+[2014-08-27 03:16:01.901] [ERROR] 10000 - sign error
+[2014-08-27 03:16:03.867] [ERROR] 10000 - sign error
+[2014-08-27 03:16:08.101] [ERROR] 10000 - sign error
+[2014-08-27 03:19:21.054] [ERROR] 10000 - sign error
+[2014-08-27 03:46:02.606] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:67:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:46:02.725] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:67:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:49:38.723] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:67:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:49:39.637] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:67:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:50:10.315] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:68:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:50:10.726] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:68:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:51:03.880] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:51:03.882] [ERROR] 10000 - ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:51:44.731] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:33)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:51:44.732] [ERROR] 10000 - ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:33)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:52:10.490] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:33)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:52:10.492] [ERROR] 10000 - ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:33)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:52:10.726] [ERROR] 10000 - [ReferenceError: Invalid left-hand side in assignment]
+ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:33)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:52:10.726] [ERROR] 10000 - ReferenceError: Invalid left-hand side in assignment
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:51:3)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:33)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:54:12.631] [ERROR] 10000 - [TypeError: Cannot call method 'split' of undefined]
+TypeError: Cannot call method 'split' of undefined
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:52:17)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:54:12.631] [ERROR] 10000 - TypeError: Cannot call method 'split' of undefined
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:52:17)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:54:12.732] [ERROR] 10000 - [TypeError: Cannot call method 'split' of undefined]
+TypeError: Cannot call method 'split' of undefined
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:52:17)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:54:12.732] [ERROR] 10000 - TypeError: Cannot call method 'split' of undefined
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:52:17)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:55:18.724] [ERROR] 10000 - [TypeError: Cannot call method 'split' of undefined]
+TypeError: Cannot call method 'split' of undefined
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:53:17)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:55:18.725] [ERROR] 10000 - TypeError: Cannot call method 'split' of undefined
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:53:17)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:55:18.797] [ERROR] 10000 - [TypeError: Cannot call method 'split' of undefined]
+TypeError: Cannot call method 'split' of undefined
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:53:17)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 03:55:18.799] [ERROR] 10000 - TypeError: Cannot call method 'split' of undefined
+    at Object.APP_LIB.COMMON.strToArr (/apps/dat/web/working/push-server/lib/common.js:53:17)
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:73:31)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:85:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 07:21:17.988] [ERROR] 10000 - [ReferenceError: appId is not defined]
+ReferenceError: appId is not defined
+    at module.exports.private_group_uid (/apps/dat/web/working/push-server/controllers/notifysvr.js:49:11)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:155:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+    at Decoder.add (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/index.js:233:12)
+[2014-08-27 07:21:17.990] [ERROR] 10000 - ReferenceError: appId is not defined
+    at module.exports.private_group_uid (/apps/dat/web/working/push-server/controllers/notifysvr.js:49:11)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:155:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+    at Decoder.add (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/index.js:233:12)
+[2014-08-27 07:25:41.728] [ERROR] 10000 - [ReferenceError: appId is not defined]
+ReferenceError: appId is not defined
+    at module.exports.private_group_uid (/apps/dat/web/working/push-server/controllers/notifysvr.js:49:11)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:156:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+    at Decoder.add (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/index.js:233:12)
+[2014-08-27 07:25:41.730] [ERROR] 10000 - ReferenceError: appId is not defined
+    at module.exports.private_group_uid (/apps/dat/web/working/push-server/controllers/notifysvr.js:49:11)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:156:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+    at Decoder.add (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/index.js:233:12)
+[2014-08-27 07:27:09.489] [ERROR] 10000 - [ReferenceError: appId is not defined]
+ReferenceError: appId is not defined
+    at module.exports.private_group_uid (/apps/dat/web/working/push-server/controllers/notifysvr.js:49:11)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:156:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+    at Decoder.add (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/index.js:233:12)
+[2014-08-27 07:27:09.489] [ERROR] 10000 - ReferenceError: appId is not defined
+    at module.exports.private_group_uid (/apps/dat/web/working/push-server/controllers/notifysvr.js:49:11)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:97:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:156:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+    at Decoder.add (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/index.js:233:12)
+[2014-08-27 14:05:48.777] [ERROR] 10000 - sign error
+[2014-08-27 14:05:49.898] [ERROR] 10000 - sign error
+[2014-08-27 14:09:23.108] [ERROR] 10000 - [ReferenceError: data is not defined]
+ReferenceError: data is not defined
+    at Socket.WebClient.disconnect (/apps/dat/web/working/push-server/controllers/webclt.js:179:21)
+    at Socket.emit (events.js:95:17)
+    at Socket.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:129:10)
+    at Socket.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:398:8)
+    at Client.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:204:12)
+    at Socket.emit (events.js:117:20)
+    at Socket.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/socket.js:240:10)
+    at WebSocket.g (events.js:180:16)
+    at WebSocket.emit (events.js:92:17)
+    at WebSocket.Transport.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/transport.js:113:8)
+[2014-08-27 14:09:23.109] [ERROR] 10000 - ReferenceError: data is not defined
+    at Socket.WebClient.disconnect (/apps/dat/web/working/push-server/controllers/webclt.js:179:21)
+    at Socket.emit (events.js:95:17)
+    at Socket.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:129:10)
+    at Socket.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:398:8)
+    at Client.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:204:12)
+    at Socket.emit (events.js:117:20)
+    at Socket.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/socket.js:240:10)
+    at WebSocket.g (events.js:180:16)
+    at WebSocket.emit (events.js:92:17)
+    at WebSocket.Transport.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/transport.js:113:8)
+[2014-08-27 14:10:06.956] [ERROR] 10000 - [ReferenceError: appMap is not defined]
+ReferenceError: appMap is not defined
+    at Socket.WebClient.disconnect (/apps/dat/web/working/push-server/controllers/webclt.js:187:12)
+    at Socket.emit (events.js:95:17)
+    at Socket.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:129:10)
+    at Socket.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:398:8)
+    at Client.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:204:12)
+    at Socket.emit (events.js:117:20)
+    at Socket.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/socket.js:240:10)
+    at WebSocket.g (events.js:180:16)
+    at WebSocket.emit (events.js:92:17)
+    at WebSocket.Transport.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/transport.js:113:8)
+[2014-08-27 14:10:06.959] [ERROR] 10000 - ReferenceError: appMap is not defined
+    at Socket.WebClient.disconnect (/apps/dat/web/working/push-server/controllers/webclt.js:187:12)
+    at Socket.emit (events.js:95:17)
+    at Socket.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:129:10)
+    at Socket.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:398:8)
+    at Client.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:204:12)
+    at Socket.emit (events.js:117:20)
+    at Socket.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/socket.js:240:10)
+    at WebSocket.g (events.js:180:16)
+    at WebSocket.emit (events.js:92:17)
+    at WebSocket.Transport.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/transport.js:113:8)
+[2014-08-27 14:10:48.745] [ERROR] 10000 - [ReferenceError: data is not defined]
+ReferenceError: data is not defined
+    at Socket.WebClient.disconnect (/apps/dat/web/working/push-server/controllers/webclt.js:193:24)
+    at Socket.emit (events.js:95:17)
+    at Socket.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:129:10)
+    at Socket.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:398:8)
+    at Client.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:204:12)
+    at Socket.emit (events.js:117:20)
+    at Socket.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/socket.js:240:10)
+    at WebSocket.g (events.js:180:16)
+    at WebSocket.emit (events.js:92:17)
+    at WebSocket.Transport.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/transport.js:113:8)
+[2014-08-27 14:10:48.747] [ERROR] 10000 - ReferenceError: data is not defined
+    at Socket.WebClient.disconnect (/apps/dat/web/working/push-server/controllers/webclt.js:193:24)
+    at Socket.emit (events.js:95:17)
+    at Socket.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:129:10)
+    at Socket.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:398:8)
+    at Client.onclose (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:204:12)
+    at Socket.emit (events.js:117:20)
+    at Socket.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/socket.js:240:10)
+    at WebSocket.g (events.js:180:16)
+    at WebSocket.emit (events.js:92:17)
+    at WebSocket.Transport.onClose (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/engine.io/lib/transport.js:113:8)
+[2014-08-27 14:12:14.001] [ERROR] 10000 - [ReferenceError: i is not defined]
+ReferenceError: i is not defined
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:102:24)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:90:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 14:12:14.002] [ERROR] 10000 - ReferenceError: i is not defined
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:102:24)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:90:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 14:13:00.878] [ERROR] 10000 - [TypeError: Cannot call method 'indexOf' of undefined]
+TypeError: Cannot call method 'indexOf' of undefined
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:111:25)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:90:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 14:13:00.880] [ERROR] 10000 - TypeError: Cannot call method 'indexOf' of undefined
+    at WebClient.register (/apps/dat/web/working/push-server/controllers/webclt.js:111:25)
+    at Namespace.workers (/apps/dat/web/working/push-server/init.js:90:9)
+    at Namespace.emit (events.js:95:17)
+    at Namespace.emit (/apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:205:10)
+    at /apps/dat/web/working/push-server/node_modules/socket.io/lib/namespace.js:172:14
+    at process._tickCallback (node.js:419:13)
+[2014-08-27 14:39:10.527] [ERROR] 10000 - [ReferenceError: appId is not defined]
+ReferenceError: appId is not defined
+    at module.exports.broadcast_all (/apps/dat/web/working/push-server/controllers/notifysvr.js:17:21)
+    at module.exports.broadcast_public (/apps/dat/web/working/push-server/controllers/notifysvr.js:86:3)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:101:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:101:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:160:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+[2014-08-27 14:39:10.528] [ERROR] 10000 - ReferenceError: appId is not defined
+    at module.exports.broadcast_all (/apps/dat/web/working/push-server/controllers/notifysvr.js:17:21)
+    at module.exports.broadcast_public (/apps/dat/web/working/push-server/controllers/notifysvr.js:86:3)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:101:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:101:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:160:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+[2014-08-27 14:39:50.330] [ERROR] 10000 - [ReferenceError: quAlias is not defined]
+ReferenceError: quAlias is not defined
+    at module.exports.broadcast_group (/apps/dat/web/working/push-server/controllers/notifysvr.js:48:7)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:101:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:101:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:160:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+    at Decoder.add (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/index.js:233:12)
+[2014-08-27 14:39:50.331] [ERROR] 10000 - ReferenceError: quAlias is not defined
+    at module.exports.broadcast_group (/apps/dat/web/working/push-server/controllers/notifysvr.js:48:7)
+    at Object.eval (eval at <anonymous> (/apps/dat/web/working/push-server/controllers/notifysvr.js:101:48), <anonymous>:1:1)
+    at Object.module.exports.inform (/apps/dat/web/working/push-server/controllers/notifysvr.js:101:4)
+    at Socket.WebClient.message (/apps/dat/web/working/push-server/controllers/webclt.js:160:13)
+    at Socket.emit (events.js:95:17)
+    at Socket.onevent (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:326:8)
+    at Socket.onpacket (/apps/dat/web/working/push-server/node_modules/socket.io/lib/socket.js:286:12)
+    at Client.ondecoded (/apps/dat/web/working/push-server/node_modules/socket.io/lib/client.js:181:14)
+    at Decoder.Emitter.emit (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/emitter/index.js:132:20)
+    at Decoder.add (/apps/dat/web/working/push-server/node_modules/socket.io/node_modules/socket.io-parser/index.js:233:12)
