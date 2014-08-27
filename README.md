@@ -4,7 +4,8 @@
 	1、聊天室
 	2、订阅器
 
-<h3>在线测试：<a href="http://walkfuture.com:7707/" target="_blank">http://walkfuture.com:7707/</a></h3>
+<h3>在线测试：</h3>
+http://walkfuture.com:7707/
 
 <h3>使用方法:</h3>
 	1、下载文件并解压
