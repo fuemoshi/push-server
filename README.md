@@ -6,8 +6,7 @@ nodejs/socket.io 服务推应用：
 
 使用方法:<br/>
 	1、下载文件并解压<br/>
-	2、绑定host  <br/>
-		ip  push-server-demos.vip.com <br/>
+	2、绑定本机host到push-server-demos.vip.com <br/>
 	3、nginx将域名指向目录 <br/> 
 		push-server/php-demo <br/>
 	4、启动服务器 node app 或 ./appclt.sh <br/>
